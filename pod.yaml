@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: myapp
+  name: multi-con-pod
+spec:
+  containers:
+  - name: con1   ### first container 
+    image: nginx:latest
+    ports:
+    - containerPort: 80
